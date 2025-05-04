@@ -1,0 +1,15 @@
+function reverseobj(obj) {
+  const result = {};
+  for (let key in obj) {
+    const value = obj[key];
+    result[value] = key;
+  }
+  return result;
+}
+const student = {
+  name: "malihe",
+  age: "22",
+  city: "mashhad"
+};
+
+console.log(reverseobj(student));
