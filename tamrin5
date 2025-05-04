@@ -1,0 +1,17 @@
+function mergeObjects(student, info) {
+  const result = {};
+
+  for (let key in student) {
+    result[key] = student[key];
+  }
+
+  for (let key in info) {
+    result[key] = info[key];
+  }
+
+  return result;
+}
+const student = { name: "malihe", age: 22 };
+const info = { city: "mashhad", phone: "09372610887" };
+
+console.log(mergeObjects(student, info));
